@@ -1,0 +1,15 @@
+create table dbodisciplina (
+nome_disciplina varchar (30),
+codigo_disciplina int,
+carga_horaria int,
+professor_disciplina varchar (30),
+matricula int,
+Primary Key (codigo_disciplina),
+Foreign Key (matricula) references dboaluno ( matricula)  
+)
+CREATE TABLE fornecedores(
+codigo int(4) AUTO_INCREMENT,
+nome varchar(30) NOT NULL,
+email varchar(50),
+PRIMARY KEY (codigo)
+)
